@@ -1,0 +1,12 @@
+% EMakefile
+% -*- mode: erlang -*-
+{
+	["src/*", "src/*/*", "src/*/*/*"],
+ 	[
+		{i, "include"},
+		{i, "/usr/local/Cellar/yaws/1.87/lib/yaws/include"},
+		{d, debug},
+  	{outdir, "ebin"},
+  	debug_info
+	]
+}.
