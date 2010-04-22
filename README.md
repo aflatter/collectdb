@@ -8,8 +8,13 @@ CollectDB is written in Erlang and furthermore depends on couchbeam. If you're u
 
     make all
     make run
+    
+Now configure a collectd instance to use your machine as a server. You should see some output on the console for every packet collectdb receives.
 
-This will fail if you're not running a couchdb instance on your local port 5984. Sorry, there currently are no user-friendly error messages.
+Caveats
+-------
+* Packets are currently NOT saved to database. This is still TODO!
+* `make run` will fail if you're not running a couchdb instance on your local port 5984. Sorry, there currently are no user-friendly error messages.
 
 Tests
 -----
